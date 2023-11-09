@@ -1,8 +1,42 @@
+# React Native & TypeScript - Movie App
+
+---
+
+# Temas puntuales de la sección
+
+### ¿Qué veremos en esta sección?
+
+- El objetivo es crear una aplicación que consuma un API de películas y que sea visualmente atractiva, también hacer la re-utilización de componentes y tener dos vistas, una que será el Home de la aplicación y otra vista donde estará el detalle de la película como descripción general, actores, etc.
+
+  - **NOTA:** Actualmente tiene las configuraciones para Android, faltaría realizar las configuraciones para iOS.
+
+  - Puntualmente se usará:
+
+    - Stack Navigator para los screens
+    - Custom Hooks
+    - Axios
+      - Promesas simultáneas
+      - Loadings de peticiones y componente Loader
+    - Carousels o sliders de imágenes
+      - Librería: react-native-reanimated-carousel
+      - Flat List (componente de React Native)
+    - Scroll View y Scroll View anidado
+
+### \* RECURSOS A USAR:
+
+- Axios (https://www.npmjs.com/package/axios):
+  - npm i axios
+- react-native-reanimated-carousel (https://github.com/dohooo/react-native-reanimated-carousel) (https://www.npmjs.com/package/react-native-reanimated-carousel):
+  - npm install react-native-reanimated-carousel
+  - npm install react-native-gesture-handler react-native-reanimated
+
+---
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
 
