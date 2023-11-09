@@ -6,7 +6,8 @@
 
 ### ¿Qué veremos en esta sección?
 
-- El objetivo es crear una aplicación que consuma un API de películas y que sea visualmente atractiva, también hacer la re-utilización de componentes y tener dos vistas, una que será el Home de la aplicación y otra vista donde estará el detalle de la película como descripción general, actores, etc.
+- El objetivo es crear una aplicación que consuma un API de películas que sacaremos de [TMDB](https://developer.themoviedb.org/reference/intro/getting-started) y que sea visualmente atractiva, también hacer la re-utilización de componentes y tener dos vistas, una que será el Home de la aplicación y otra vista donde estará el detalle de la película como descripción general, actores, etc.
+- Se trabajará con gradientes para hacer el efecto visual de cambio cuando una nueva película es seleccionada.
 
   - **NOTA:** Actualmente tiene las configuraciones para Android, faltaría realizar las configuraciones para iOS.
 
@@ -21,14 +22,42 @@
       - Librería: react-native-reanimated-carousel
       - Flat List (componente de React Native)
     - Scroll View y Scroll View anidado
+    - ContextAPI
+    - Global State
+    - Extraer colores de las imágenes
+    - Función helper
 
 ### \* RECURSOS A USAR:
 
 - Axios (https://www.npmjs.com/package/axios):
-  - npm i axios
+  - `npm i axios`
 - react-native-reanimated-carousel (https://github.com/dohooo/react-native-reanimated-carousel) (https://www.npmjs.com/package/react-native-reanimated-carousel):
-  - npm install react-native-reanimated-carousel
-  - npm install react-native-gesture-handler react-native-reanimated
+  - `npm i react-native-reanimated-carousel`
+  - `npm i react-native-gesture-handler react-native-reanimated`
+- react-native-linear-gradient (https://github.com/react-native-linear-gradient/react-native-linear-gradient):
+  - `npm i react-native-linear-gradient`
+- react-native-image-colors (https://github.com/osamaqarem/react-native-image-colors)
+  - `npm i react-native-image-colors`
+
+### \* IMÁGENES DE LA MOVIE APP:
+
+<style>
+  .image-container {
+    text-align: center;
+  }
+  .image-container img {
+    margin: 15px;
+  }
+</style>
+
+<div class="image-container">
+  <img src="./assetsApp/Screenshot_1699571131.png" alt="image" width="200">
+  <img src="./assetsApp/Screenshot_1699571132.png" alt="image" width="200">
+  <img src="./assetsApp/Screenshot_1699571123.png" alt="image" width="200">
+  <img src="./assetsApp/Screenshot_1699571816.png" alt="image" width="200">
+  <img src="./assetsApp/Screenshot_1699571145.png" alt="image" width="200">
+  <img src="./assetsApp/Screenshot_1699571150.png" alt="image" width="200">
+</div>
 
 ---
 

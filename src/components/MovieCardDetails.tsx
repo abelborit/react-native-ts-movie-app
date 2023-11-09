@@ -25,17 +25,18 @@ export const MovieCardDetails = ({
   return (
     <View>
       <View style={styles.ratingContainer}>
-        <Icon name="star-outline" size={22} color="#666" />
+        <Icon name="star-outline" size={25} color="#a00" />
         <Text style={styles.ratingText}>{movieDetails.vote_average}</Text>
+      </View>
+
+      <View style={styles.descriptionContainer}>
         <Text style={styles.genres}>
-          /{' '}
+          <Text style={{fontWeight: 'bold'}}>Género(s): </Text>
           {movieDetails.genres
             .map(genreElement => genreElement.name)
             .join(', ')}
         </Text>
-      </View>
 
-      <View style={styles.descriptionContainer}>
         <Text style={styles.releaseData}>
           <Text style={{fontWeight: 'bold'}}>Fecha de lanzamiento: </Text>
           {String(movieDetails.release_date)}
@@ -94,15 +95,6 @@ export const MovieCardDetails = ({
 };
 
 const styles = StyleSheet.create({
-  ratingText: {
-    fontSize: 17,
-    letterSpacing: 0.5,
-    fontWeight: 'bold',
-  },
-  genres: {
-    fontSize: 15,
-    letterSpacing: 0.5,
-  },
   ratingContainer: {
     flexDirection: 'row',
     gap: 6,
@@ -110,14 +102,26 @@ const styles = StyleSheet.create({
     marginTop: 8,
     alignItems: 'center',
   },
+  ratingText: {
+    fontSize: 22,
+    letterSpacing: 0.5,
+    fontWeight: 'bold',
+    color: '#a00',
+  },
+
   descriptionContainer: {
     marginHorizontal: 20,
     marginTop: 8,
   },
-  releaseData: {
-    fontSize: 15,
+  genres: {
+    fontSize: 16,
     marginBottom: 8,
   },
+  releaseData: {
+    fontSize: 16,
+    // marginBottom: 8,
+  },
+
   title: {
     fontSize: 25,
     fontWeight: 'bold',
